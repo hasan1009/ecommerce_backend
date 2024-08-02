@@ -36,4 +36,37 @@ var lightTheme = ThemeData(
             fontWeight: FontWeight.w400,
             color: AppColors.onPrimaryContainerColor)));
 
-var darkTheme = ThemeData(brightness: Brightness.dark);
+var darkTheme = ThemeData(
+    brightness: Brightness.dark,
+    colorScheme: ColorScheme.dark(
+        background: AppColors.darkBGColor,
+        primary: AppColors.darkPrimaryColor,
+        onBackground: AppColors.darkOnBackgroundColor,
+        primaryContainer: AppColors.darkPrimaryContainer,
+        onPrimaryContainer: AppColors.backgroundColor),
+    textTheme: TextTheme(
+        headlineMedium: TextStyle(
+            fontFamily: "Poppins",
+            fontSize: 25,
+            fontWeight: FontWeight.w500,
+            color: AppColors.darkOnBackgroundColor),
+        headlineSmall: TextStyle(
+            fontFamily: "Poppins",
+            fontSize: 20,
+            fontWeight: FontWeight.w500,
+            color: AppColors.darkOnBackgroundColor),
+        bodyMedium: TextStyle(
+            fontFamily: "Poppins",
+            fontSize: 15,
+            fontWeight: FontWeight.w500,
+            color: AppColors.darkOnBackgroundColor),
+        bodySmall: TextStyle(
+            fontFamily: "Poppins",
+            fontSize: 10,
+            fontWeight: FontWeight.w500,
+            color: AppColors.darkOnBackgroundColor),
+        labelMedium: TextStyle(
+            fontFamily: "Poppins",
+            fontSize: 10,
+            fontWeight: FontWeight.w400,
+            color: AppColors.darkOnBackgroundColor)));

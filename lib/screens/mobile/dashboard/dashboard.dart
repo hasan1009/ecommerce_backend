@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class WebHomePage extends StatelessWidget {
-  const WebHomePage({super.key});
+class MobileDashboard extends StatelessWidget {
+  const MobileDashboard({super.key});
 
   @override
   Widget build(BuildContext context) {
