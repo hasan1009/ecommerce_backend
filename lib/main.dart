@@ -1,5 +1,5 @@
 import 'package:ecom_backend/config/themes.dart';
-import 'package:ecom_backend/views/home_page_view.dart';
+import 'package:ecom_backend/screens/home_page/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Deshi Mart',
       theme: darkTheme,
-      home: const HomePageView(),
+      home: const HomePage(),
     );
   }
 }

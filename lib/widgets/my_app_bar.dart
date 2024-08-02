@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../config/colors.dart';
+import 'responsive_layout.dart';
 
 class MyAppBar extends StatelessWidget {
   const MyAppBar({
@@ -9,12 +10,22 @@ class MyAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDesktop = Resposive.isDesktop(context);
     return Container(
       height: 70,
       decoration: BoxDecoration(color: AppColors.sidebarColor),
       child: Row(
         children: [
-          const Spacer(),
+          if (!isDesktop)
+            IconButton(
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                },
+                icon: const Icon(Icons.menu)),
+          const SizedBox(
+            width: 10,
+          ),
+          if (isDesktop) const Spacer(),
           Expanded(
               child: TextFormField(
             decoration: InputDecoration(
